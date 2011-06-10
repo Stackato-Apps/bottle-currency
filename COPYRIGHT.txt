@@ -6,6 +6,9 @@ Copyright Ownership
 2. File: currencies.dat
    The currency ISO codes database is copyright of OANDA Corporation.
 
-3. All other files:
+3. File: static/jquery-1.6.1.min.js
+   The jQuery library is copyright of The jQuery Project.
+
+4. All other files:
    Copyrght of ActiveState Software, Inc; see LICENSE.txt for details.
 
