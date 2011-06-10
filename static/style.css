@@ -34,6 +34,7 @@ h1 {
     background-color: #E1C7AE;
     text-align: center;
     padding: 2em;
+    border-bottom: solid 8px #243040;
 }
 
 .error {
@@ -123,4 +124,14 @@ form.currency input[name=amount] {
     width: 8em;
 }
 
-
+a.branding {
+    display: block;
+    text-decoration: none;
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-image: url(http://templates.activestate.com/images/stackato-ribbon/bottom-right.png);
+}
