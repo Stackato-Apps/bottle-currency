@@ -1,0 +1,126 @@
+/* style.css */
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    font-size: 11pt;
+    line-height: 120%;
+    margin: 0;
+    padding: 0;
+    background-color: #244357;
+}
+
+input {
+    font-family: helvetica, arial, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+h1 {
+    margin: 10px 20px 10px 10px;
+    padding: 25px;
+    font-family: georgia, serif;
+    font-weight: normal;
+    text-align: left;
+    font-size: 45px;
+    color: #ffffff;
+    background-image: url(/static/bottle-logo.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.container {
+    background-color: #E1C7AE;
+    text-align: center;
+    padding: 2em;
+}
+
+.error {
+    padding-top: 1em;
+    margin: auto;
+    text-align: center;
+    width: 20em;
+    color: #F89399;
+}
+
+.block {
+    width: auto;
+    display: inline-block;
+    margin: 1em 0.8em;
+}
+
+.currency-list {
+    background-color: white;
+    height: 12em;
+    width: 22em;
+    overflow: auto;
+    border: solid 2px #A1979E;
+}
+
+.currency-list table {
+    margin: 0;
+}
+
+.currency-list tr {
+    cursor: pointer;
+}
+
+.currency-list tr:nth-child(odd) {
+    background-color: #C6D7E7;
+}
+
+.currency-list tr:hover {
+    background-color: #F89399;
+}
+
+.currency-list tr.selected {
+    background-color: #E64E5B;
+    color: #ffffff;
+}
+
+.currency-list th,
+.currency-list td {
+    text-align: left;
+    vertical-align: top;
+    padding: 3px 4px;
+}
+
+.currency-list th {
+    width: 3em;
+}
+
+form.currency {
+    display: block;
+    padding: 0;
+    margin: 0 0 1em 0;
+    font-size: 18pt;
+}
+
+.block.left form.currency {
+    text-align: right;
+}
+
+.block.right form.currency {
+    text-align: left;
+}
+
+form.currency .symbol,
+form.currency input[name=amount] {
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+form.currency .symbol {
+    color: #202020;
+    padding: 0 0.5em;
+}
+
+form.currency input[name=amount] {
+    border: solid 2px #A1979E;
+    margin: 0;
+    padding: 2px 8px;
+    width: 8em;
+}
+
+

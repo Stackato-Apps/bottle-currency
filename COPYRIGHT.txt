@@ -1,0 +1,11 @@
+Copyright Ownership
+
+1. File: static/bottle-logo.png
+   The bottle logo is copyright of Marcel Hellkamp
+
+2. File: currencies.dat
+   The currency ISO codes database is copyright of OANDA Corporation.
+
+3. All other files:
+   Copyrght of ActiveState Software, Inc; see LICENSE.txt for details.
+
