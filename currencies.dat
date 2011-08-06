@@ -1,5 +1,3 @@
-ADF	Andorran Franc
-ADP	Andorran Peseta
 AED	United Arab Emirates Dirham
 AFN	Afghanistan Afghani
 ALL	Albanian Lek
@@ -32,14 +30,13 @@ CLP	Chilean Peso
 CNY	Chinese Yuan Renminbi
 COP	Colombian Peso
 CRC	Costa Rican Colon
-CZK	Czech Koruna
 CUP	Cuban Peso
 CVE	Cape Verde Escudo
+CZK	Czech Koruna
 DJF	Djibouti Franc
 DKK	Danish Krone
 DOP	Dominican Peso
 DZD	Algerian Dinar
-ECS	Ecuador Sucre
 EEK	Estonian Kroon
 EGP	Egyptian Pound
 ETB	Ethiopian Birr
@@ -121,25 +118,20 @@ RWF	Rwandan Franc
 SAR	Saudi Riyal
 SBD	Solomon Islands Dollar
 SCR	Seychelles Rupee
-SDD	Sudanese Dinar
 SDG	Sudanese Pound
-SDP	Sudanese Pound, Old
 SEK	Swedish Krona
 SGD	Singapore Dollar
 SHP	St. Helena Pound
-SIT	Slovenian Tolar
 SKK	Slovak Koruna
 SLL	Sierra Leone Leone
 SOS	Somali Schilling
 SRD	Suriname Dollar
-SRG	Suriname Guilder
 STD	Sao Tome and Principe Dobra
 SVC	El Salvador Colon
 SYP	Syrian Pound
 SZL	Swaziland Lilangeni
 THB	Thai Baht
 TJS	Tajikistani Somoni
-TMM	Turkmenistan Manat
 TND	Tunisian Dinar
 TOP	Tongan Pa'anga
 TRY	Turkish Lira
@@ -156,11 +148,7 @@ VND	Vietnamese Dong
 VUV	Vanuatu Vatu
 WST	Samoan Tala
 XAF	CFA Franc BEAC (for Cameroon, the Central African Republic, Chad, Congo, Equatorial Guinea and Gabon)
-XAG	Silver (oz.)
-XAU	Gold (oz.)
 XOF	CFA Franc BCEAO (for Benin, Burkino Faso, Cote D'Ivoire, Mali, Niger, Senegal and Togo)
-XPD	Palladium (oz.)
-XPT	Platinum (oz.)
 ZAR	South African Rand
 ZMK	Zambian Kwacha
 ZWD	Zimbabwe Dollar
