@@ -1,0 +1,10 @@
+name: converter
+
+framework:
+  type: python
+
+mem: 64M
+instances: 2
+
+services:
+  redis: redis-currency
