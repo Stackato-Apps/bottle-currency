@@ -8,10 +8,10 @@ import redis
 import bottle
 import logging
 import urllib2
+import urlparse
 import contextlib
 
 from bottle import route
-from config import cfget
 
 STATIC_ROOT = os.path.join(os.path.dirname(__file__), 'static')
 
@@ -27,9 +27,8 @@ logging.basicConfig()
 log = logging.getLogger('bottle-currency')
 log.setLevel(logging.DEBUG)
 
-rdb = redis.Redis(host=cfget('/redis.*/hostname', 'localhost'),
-                  port=cfget('/redis.*/port', 6379),
-                  password=cfget('/redis.*/password'))
+url = urlparse.urlparse(os.environ['REDIS_URL'])
+rdb = redis.Redis(host=url.hostname, port=url.port, password=url.password)
 
 def currencies(db=[]):
     if not db:
