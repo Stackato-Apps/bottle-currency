@@ -5,8 +5,6 @@ framework:
 
 mem: 64M
 
-instances: 2
-
 requirements:
   pypm:
     - bottle
