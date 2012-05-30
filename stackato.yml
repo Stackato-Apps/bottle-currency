@@ -11,4 +11,4 @@ requirements:
     - redis
 
 services:
-  redis: redis-currency
+  redis-currency: redis
