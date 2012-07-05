@@ -16,11 +16,15 @@ database for 3 hours.
 
 ## Usage
 
-### Using Stackato platform
+### Deploy on Stackato
 
+    $ git clone git://github.com/Stackato-Apps/bottle-currency.git
+    $ cd bottle-currency
     $ stackato push -n
 
-Then open http://converter.stackato.local in a browser.
+Then open application in a browser.
+
+    $ stackato open
 
 ### Without Stackato
 
