@@ -1,14 +1,12 @@
 name: converter
-
 framework:
   type: python
-
 mem: 64M
-
 requirements:
   pypm:
     - bottle
     - redis
-
+min_version:
+  client: 1.4.3
 services:
-  redis-currency: redis
+  ${name}-db: redis
