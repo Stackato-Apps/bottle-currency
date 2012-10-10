@@ -15,7 +15,7 @@ from config import cfget
 
 STATIC_ROOT = os.path.join(os.path.dirname(__file__), 'static')
 
-SERVICE_URL = "http://www.multimolti.com/apps/currencyapi"
+SERVICE_URL = "http://www.sann-gmbh.com/currencyapi/"
 # Mirrors:
 #     http://www.lennart-moltrecht.com/apps/currencyapi/
 #     http://tp1.com.ar/currency/
