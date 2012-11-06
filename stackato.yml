@@ -15,5 +15,4 @@ services:
 env:
   NEW_RELIC_LOG: stderr
   NEW_RELIC_APP_NAME: ${name}
-  NEW_RELIC_LICENSE_KEY: my_license_key
 # NEW_RELIC_LOG_LEVEL: DEBUG
