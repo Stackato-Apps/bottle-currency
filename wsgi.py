@@ -15,13 +15,15 @@ from bottle import route
 
 STATIC_ROOT = os.path.join(os.path.dirname(__file__), 'static')
 
-SERVICE_URL = "http://www.lennart-moltrecht.com/apps/currencyapi/"
-# Mirrors:
+SERVICE_URL = "http://www.sann-gmbh.com/currencyapi/"
+# Mirrors: # status as of Mar2013
+#   Working...
+#     http://www.sann-gmbh.com/currencyapi/
+#     http://financy.dbeuchert.com/
+#   Not working...
 #     http://www.lennart-moltrecht.com/apps/currencyapi/
 #     http://tp1.com.ar/currency/
-#     http://www.sann-gmbh.com/currencyapi/
 #     http://static.hattrick-youthclub.org/currency/
-#     http://financy.dbeuchert.com/
 
 logging.basicConfig()
 log = logging.getLogger('bottle-currency')
