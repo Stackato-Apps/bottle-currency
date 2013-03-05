@@ -42,4 +42,6 @@ It is possible to run the app without Stackato, if necessary.
     
 Then open http://127.0.0.1 in a browser.
 
+## Using New Relic
 
+Before you deploy your application, modify stackato.yml and insert your New Relic license key.

@@ -3,6 +3,8 @@ framework:
   type: python
 mem: 64M
 requirements:
+  pip:
+    - newrelic
   pypm:
     - bottle
     - redis
@@ -10,3 +12,7 @@ min_version:
   client: 1.4.3
 services:
   ${name}-db: redis
+env:
+  NEW_RELIC_LOG: stderr
+  NEW_RELIC_APP_NAME: ${name}
+# NEW_RELIC_LICENSE_KEY: <LICENSE_KEY>

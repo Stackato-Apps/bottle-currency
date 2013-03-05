@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+import newrelic.agent
+newrelic.agent.initialize()
 
 import re
 import os
@@ -90,6 +92,7 @@ def serve_static(filename):
     return bottle.static_file(filename, root=STATIC_ROOT)
 
 application = bottle.app()
+application = newrelic.agent.wsgi_application()(application)
 application.catchall = False
 
 if os.getenv('SELFHOST', False):
