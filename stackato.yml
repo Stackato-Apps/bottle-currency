@@ -1,7 +1,7 @@
 name: converter
 framework:
   type: python
-mem: 64M
+mem: 128M
 requirements:
   pypm:
     - bottle
