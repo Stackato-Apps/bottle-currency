@@ -1,4 +1,4 @@
-name: converter
+name: bottle-currency
 framework:
   type: python
 mem: 128M
