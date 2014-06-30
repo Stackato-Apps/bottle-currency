@@ -4,8 +4,8 @@ framework:
 mem: 128M
 requirements:
   pypm:
-    - bottle
-    - redis
+  - bottle
+  - redis
 min_version:
   client: 1.4.3
 services:
