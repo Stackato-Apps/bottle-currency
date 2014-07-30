@@ -1,0 +1,15 @@
+applications:
+- name: bottle-currency
+  framework:
+    name: python
+  mem: 128M
+  services:
+    ${name}-db:
+      type: redis
+  stackato:
+    min_version:
+      client: 1.4.3
+    requirements:
+      pypm:
+      - bottle
+      - redis
