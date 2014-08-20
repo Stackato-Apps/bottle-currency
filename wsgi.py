@@ -93,5 +93,6 @@ application = bottle.app()
 application.catchall = False
 
 if os.getenv('SELFHOST', False):
-    bottle.run(application)
+    port = os.getenv('PORT')
+    bottle.run(application, host='0.0.0.0', port=port)
 
