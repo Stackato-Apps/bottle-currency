@@ -29,8 +29,11 @@ logging.basicConfig()
 log = logging.getLogger('bottle-currency')
 log.setLevel(logging.DEBUG)
 
-url = urlparse.urlparse(os.environ['REDIS_URL'])
-rdb = redis.Redis(host=url.hostname, port=url.port, password=url.password)
+if os.getenv('REDIS_URL'):
+    url = urlparse.urlparse(os.getenv('REDIS_URL'))
+    rdb = redis.Redis(host=url.hostname, port=url.port, password=url.password)
+else:
+    rdb = redis.Redis('localhost')
 
 def currencies(db=[]):
     if not db:
@@ -92,7 +95,4 @@ def serve_static(filename):
 application = bottle.app()
 application.catchall = False
 
-if os.getenv('SELFHOST', False):
-    port = os.getenv('PORT')
-    bottle.run(application, host='0.0.0.0', port=port)
-
+bottle.run(application, host='0.0.0.0', port=os.getenv('PORT', 8080))

@@ -5,8 +5,5 @@ applications:
     ${name}-db:
       type: redis
   stackato:
-    env:
-      SELFHOST:
-        default: 1
     min_version:
       client: 1.4.3
