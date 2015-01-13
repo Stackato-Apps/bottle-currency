@@ -18,6 +18,10 @@ database for 3 hours.
 
 ### Deploy on Stackato
 
+    Server side:
+    $ kato role add redis # if not present
+
+    Client side:
     $ git clone git://github.com/Stackato-Apps/bottle-currency.git
     $ cd bottle-currency
     $ stackato push -n
