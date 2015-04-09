@@ -10,6 +10,7 @@ import logging
 import urllib2
 import urlparse
 import contextlib
+import json
 
 from bottle import route
 
@@ -29,9 +30,16 @@ logging.basicConfig()
 log = logging.getLogger('bottle-currency')
 log.setLevel(logging.DEBUG)
 
+vcap_services = json.loads(os.getenv('VCAP_SERVICES'))
+
 if os.getenv('REDIS_URL'):
     url = urlparse.urlparse(os.getenv('REDIS_URL'))
     rdb = redis.Redis(host=url.hostname, port=url.port, password=url.password)
+elif 'Redis' in vcap_services:
+    credentials = vcap_services['Redis'][0]['credentials']['Redis Server']
+    host = credentials['host.address']
+    port = credentials['redis.port']
+    rdb = redis.Redis(host=host, port=port)
 else:
     rdb = redis.Redis('localhost')
 
