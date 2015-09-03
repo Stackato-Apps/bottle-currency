@@ -125,6 +125,7 @@ form.currency input[name=amount] {
 }
 
 a.branding {
+    visibility: hidden;
     display: block;
     text-decoration: none;
     height: 150px;
@@ -133,5 +134,5 @@ a.branding {
     position: fixed;
     bottom: 0;
     right: 0;
-    /* background-image: url(http://templates.activestate.com/images/stackato-ribbon/bottom-right.png); */
+    background-image: url(http://templates.activestate.com/images/stackato-ribbon/bottom-right.png);
 }
