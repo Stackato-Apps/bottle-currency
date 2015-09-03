@@ -133,5 +133,5 @@ a.branding {
     position: fixed;
     bottom: 0;
     right: 0;
-    background-image: url(http://templates.activestate.com/images/stackato-ribbon/bottom-right.png);
+    /* background-image: url(http://templates.activestate.com/images/stackato-ribbon/bottom-right.png); */
 }
