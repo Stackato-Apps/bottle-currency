@@ -123,16 +123,3 @@ form.currency input[name=amount] {
     padding: 2px 8px;
     width: 8em;
 }
-
-a.branding {
-    visibility: hidden;
-    display: block;
-    text-decoration: none;
-    height: 150px;
-    width: 150px;
-    overflow: hidden;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    background-image: url(http://templates.activestate.com/images/stackato-ribbon/bottom-right.png);
-}

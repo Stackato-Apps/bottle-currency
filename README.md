@@ -16,23 +16,21 @@ database for 3 hours.
 
 ## Usage
 
-### Deploy on Stackato
+### Deploy on HPE Helion Stackato
 
     Server side:
     $ kato role add redis # if not present
 
     Client side:
-    $ git clone git://github.com/Stackato-Apps/bottle-currency.git
-    $ cd bottle-currency
     $ stackato push -n
 
 Then open application in a browser.
 
     $ stackato open
 
-### Without Stackato
+### Without HPE Helion Stackato
 
-It is possible to run the app without Stackato, if necessary.
+It is possible to run the app without HPE Helion Stackato, if necessary.
 
  1. Install and start Redis database, see http://redis.io for details
 
