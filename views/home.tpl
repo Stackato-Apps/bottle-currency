@@ -39,9 +39,6 @@
       </div>
     </div>
     <div class="error"></div>
-    <a class="branding"
-       href="http://www.activestate.com/cloud"
-       title="Powered by Stackato">&nbsp;</a>
     <script type="text/javascript" src="/static/jquery-1.6.1.min.js"></script>
     <script type="text/javascript" src="/static/main.js"></script>
 </html>
