@@ -1,7 +1,7 @@
 applications:
 - name: bottle-currency
   docker_image: stackatoapps/bottle-currency:latest
-  mem: 128M
+  memory: 128M
   services:
     ${name}-db:
       type: redis
