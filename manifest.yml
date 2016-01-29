@@ -1,9 +1,11 @@
 applications:
 - name: bottle-currency
+  buildpack: https://github.com/cloudfoundry/python-buildpack#v1.5.4
   memory: 128M
   services:
     ${name}-db:
       type: redis
+  stack: cflinuxfs2
   stackato:
     min_version:
       client: 1.4.3
